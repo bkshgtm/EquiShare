@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB7636072C9A168900141E56 /* EquiShareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7636062C9A168900141E56 /* EquiShareApp.swift */; };
+		CB7636092C9A168900141E56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7636082C9A168900141E56 /* ContentView.swift */; };
+		CB76360B2C9A168B00141E56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB76360A2C9A168B00141E56 /* Assets.xcassets */; };
+		CB76360E2C9A168B00141E56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB76360D2C9A168B00141E56 /* Preview Assets.xcassets */; };
+		CB7636182C9A168C00141E56 /* EquiShareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7636172C9A168C00141E56 /* EquiShareTests.swift */; };
+		CB7636222C9A168C00141E56 /* EquiShareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7636212C9A168C00141E56 /* EquiShareUITests.swift */; };
+		CB7636242C9A168C00141E56 /* EquiShareUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7636232C9A168C00141E56 /* EquiShareUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB7636142C9A168C00141E56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB7635FB2C9A168800141E56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB7636022C9A168900141E56;
+			remoteInfo = EquiShare;
+		};
+		CB76361E2C9A168C00141E56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB7635FB2C9A168800141E56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB7636022C9A168900141E56;
+			remoteInfo = EquiShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB7636032C9A168900141E56 /* EquiShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EquiShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7636062C9A168900141E56 /* EquiShareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquiShareApp.swift; sourceTree = "<group>"; };
+		CB7636082C9A168900141E56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CB76360A2C9A168B00141E56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB76360D2C9A168B00141E56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB7636132C9A168C00141E56 /* EquiShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EquiShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7636172C9A168C00141E56 /* EquiShareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquiShareTests.swift; sourceTree = "<group>"; };
+		CB76361D2C9A168C00141E56 /* EquiShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EquiShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7636212C9A168C00141E56 /* EquiShareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquiShareUITests.swift; sourceTree = "<group>"; };
+		CB7636232C9A168C00141E56 /* EquiShareUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquiShareUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB7636002C9A168900141E56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB7636102C9A168C00141E56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB76361A2C9A168C00141E56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB7635FA2C9A168800141E56 = {
+			isa = PBXGroup;
+			children = (
+				CB7636052C9A168900141E56 /* EquiShare */,
+				CB7636162C9A168C00141E56 /* EquiShareTests */,
+				CB7636202C9A168C00141E56 /* EquiShareUITests */,
+				CB7636042C9A168900141E56 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB7636042C9A168900141E56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB7636032C9A168900141E56 /* EquiShare.app */,
+				CB7636132C9A168C00141E56 /* EquiShareTests.xctest */,
+				CB76361D2C9A168C00141E56 /* EquiShareUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB7636052C9A168900141E56 /* EquiShare */ = {
+			isa = PBXGroup;
+			children = (
+				CB7636062C9A168900141E56 /* EquiShareApp.swift */,
+				CB7636082C9A168900141E56 /* ContentView.swift */,
+				CB76360A2C9A168B00141E56 /* Assets.xcassets */,
+				CB76360C2C9A168B00141E56 /* Preview Content */,
+			);
+			path = EquiShare;
+			sourceTree = "<group>";
+		};
+		CB76360C2C9A168B00141E56 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CB76360D2C9A168B00141E56 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CB7636162C9A168C00141E56 /* EquiShareTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB7636172C9A168C00141E56 /* EquiShareTests.swift */,
+			);
+			path = EquiShareTests;
+			sourceTree = "<group>";
+		};
+		CB7636202C9A168C00141E56 /* EquiShareUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB7636212C9A168C00141E56 /* EquiShareUITests.swift */,
+				CB7636232C9A168C00141E56 /* EquiShareUITestsLaunchTests.swift */,
+			);
+			path = EquiShareUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB7636022C9A168900141E56 /* EquiShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB7636272C9A168C00141E56 /* Build configuration list for PBXNativeTarget "EquiShare" */;
+			buildPhases = (
+				CB7635FF2C9A168900141E56 /* Sources */,
+				CB7636002C9A168900141E56 /* Frameworks */,
+				CB7636012C9A168900141E56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EquiShare;
+			productName = EquiShare;
+			productReference = CB7636032C9A168900141E56 /* EquiShare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB7636122C9A168C00141E56 /* EquiShareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB76362A2C9A168C00141E56 /* Build configuration list for PBXNativeTarget "EquiShareTests" */;
+			buildPhases = (
+				CB76360F2C9A168C00141E56 /* Sources */,
+				CB7636102C9A168C00141E56 /* Frameworks */,
+				CB7636112C9A168C00141E56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB7636152C9A168C00141E56 /* PBXTargetDependency */,
+			);
+			name = EquiShareTests;
+			productName = EquiShareTests;
+			productReference = CB7636132C9A168C00141E56 /* EquiShareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB76361C2C9A168C00141E56 /* EquiShareUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB76362D2C9A168C00141E56 /* Build configuration list for PBXNativeTarget "EquiShareUITests" */;
+			buildPhases = (
+				CB7636192C9A168C00141E56 /* Sources */,
+				CB76361A2C9A168C00141E56 /* Frameworks */,
+				CB76361B2C9A168C00141E56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB76361F2C9A168C00141E56 /* PBXTargetDependency */,
+			);
+			name = EquiShareUITests;
+			productName = EquiShareUITests;
+			productReference = CB76361D2C9A168C00141E56 /* EquiShareUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB7635FB2C9A168800141E56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					CB7636022C9A168900141E56 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					CB7636122C9A168C00141E56 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CB7636022C9A168900141E56;
+					};
+					CB76361C2C9A168C00141E56 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = CB7636022C9A168900141E56;
+					};
+				};
+			};
+			buildConfigurationList = CB7635FE2C9A168900141E56 /* Build configuration list for PBXProject "EquiShare" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB7635FA2C9A168800141E56;
+			productRefGroup = CB7636042C9A168900141E56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB7636022C9A168900141E56 /* EquiShare */,
+				CB7636122C9A168C00141E56 /* EquiShareTests */,
+				CB76361C2C9A168C00141E56 /* EquiShareUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB7636012C9A168900141E56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB76360E2C9A168B00141E56 /* Preview Assets.xcassets in Resources */,
+				CB76360B2C9A168B00141E56 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB7636112C9A168C00141E56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB76361B2C9A168C00141E56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB7635FF2C9A168900141E56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7636092C9A168900141E56 /* ContentView.swift in Sources */,
+				CB7636072C9A168900141E56 /* EquiShareApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB76360F2C9A168C00141E56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7636182C9A168C00141E56 /* EquiShareTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB7636192C9A168C00141E56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7636242C9A168C00141E56 /* EquiShareUITestsLaunchTests.swift in Sources */,
+				CB7636222C9A168C00141E56 /* EquiShareUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB7636152C9A168C00141E56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB7636022C9A168900141E56 /* EquiShare */;
+			targetProxy = CB7636142C9A168C00141E56 /* PBXContainerItemProxy */;
+		};
+		CB76361F2C9A168C00141E56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB7636022C9A168900141E56 /* EquiShare */;
+			targetProxy = CB76361E2C9A168C00141E56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CB7636252C9A168C00141E56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB7636262C9A168C00141E56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB7636282C9A168C00141E56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EquiShare/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bkshgtm.EquiShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB7636292C9A168C00141E56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EquiShare/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bkshgtm.EquiShare;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB76362B2C9A168C00141E56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bkshgtm.EquiShareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EquiShare.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EquiShare";
+			};
+			name = Debug;
+		};
+		CB76362C2C9A168C00141E56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bkshgtm.EquiShareTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EquiShare.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EquiShare";
+			};
+			name = Release;
+		};
+		CB76362E2C9A168C00141E56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bkshgtm.EquiShareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EquiShare;
+			};
+			name = Debug;
+		};
+		CB76362F2C9A168C00141E56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bkshgtm.EquiShareUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EquiShare;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB7635FE2C9A168900141E56 /* Build configuration list for PBXProject "EquiShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB7636252C9A168C00141E56 /* Debug */,
+				CB7636262C9A168C00141E56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB7636272C9A168C00141E56 /* Build configuration list for PBXNativeTarget "EquiShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB7636282C9A168C00141E56 /* Debug */,
+				CB7636292C9A168C00141E56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB76362A2C9A168C00141E56 /* Build configuration list for PBXNativeTarget "EquiShareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB76362B2C9A168C00141E56 /* Debug */,
+				CB76362C2C9A168C00141E56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB76362D2C9A168C00141E56 /* Build configuration list for PBXNativeTarget "EquiShareUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB76362E2C9A168C00141E56 /* Debug */,
+				CB76362F2C9A168C00141E56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB7635FB2C9A168800141E56 /* Project object */;
+}
