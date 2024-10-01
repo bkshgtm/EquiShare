@@ -1,10 +1,9 @@
 import SwiftUI
 
 struct ExpenseCategoryView: View {
-    @StateObject private var expenseManager = ExpenseManager()  // StateObject for managing expenses
-    @State private var selectedCategory = "Other"               // Track selected category
-    @State private var newCategory = ""                          // Text for new category
-    
+    @EnvironmentObject var expenseManager: ExpenseManager // Use EnvironmentObject
+    @State private var newCategory = "" // Text for new category
+
     var body: some View {
         NavigationView {
             VStack {
@@ -28,9 +27,6 @@ struct ExpenseCategoryView: View {
                 // List Categories
                 List(expenseManager.categories, id: \.self) { category in
                     Text(category)
-                        .onTapGesture {
-                            selectedCategory = category
-                        }
                 }
                 .navigationTitle("Categories")
             }

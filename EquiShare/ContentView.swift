@@ -7,7 +7,7 @@ struct ContentView: View {
     @State private var newExpenseAmount = ""
     @State private var selectedUsers = Set<String>()
     @State private var newUser = ""
-    @State private var showChart = false
+    @State private var selectedCategory = "" // Track selected category
     @AppStorage("isDarkMode") private var isDarkMode: Bool = false
 
     var body: some View {
@@ -24,7 +24,7 @@ struct ContentView: View {
                             .padding()
                     }
                 }
-                
+
                 // Add User Section
                 HStack {
                     TextField("Add User", text: $newUser)
@@ -40,7 +40,7 @@ struct ContentView: View {
                     }
                 }
                 .padding()
-                
+
                 // List of Users
                 List(expenseManager.users) { user in
                     HStack {
@@ -51,13 +51,13 @@ struct ContentView: View {
                     .background(Color.expenseListBackground)
                 }
                 .listStyle(PlainListStyle())
-                
+
                 // Add Expense Section
                 Form {
                     TextField("Expense Name", text: $newExpenseName)
                     TextField("Expense Amount", text: $newExpenseAmount)
                         .keyboardType(.decimalPad)
-                    
+
                     // Select Users
                     Section(header: Text("Select Participants")) {
                         ForEach(expenseManager.users, id: \.id) { user in
@@ -66,7 +66,17 @@ struct ContentView: View {
                             }
                         }
                     }
-                    
+
+                    // Select Category
+                    Section(header: Text("Select Category")) {
+                        Picker("Select a Category", selection: $selectedCategory) {
+                            ForEach(expenseManager.categories, id: \.self) { category in
+                                Text(category).tag(category)
+                            }
+                        }
+                        .pickerStyle(MenuPickerStyle())
+                    }
+
                     // Add Expense Button
                     Button(action: addExpense) {
                         Text("Add Expense")
@@ -77,17 +87,28 @@ struct ContentView: View {
                             .shadow(radius: 5)
                     }
                 }
-                
+
                 Spacer()
-                
+
                 // Show Total Balance
                 Text("Total Balance: $\(expenseManager.totalBalance(), specifier: "%.2f")")
                     .font(.title)
                     .padding()
-                
+
                 // Show Chart Button
                 NavigationLink("View Chart") {
                     ExpenseChartView()
+                        .environmentObject(expenseManager) // Pass ExpenseManager here
+                }
+                .padding()
+                .background(Color.buttonColor)
+                .foregroundColor(Color.buttonTextColor)
+                .cornerRadius(10)
+                .shadow(radius: 5)
+
+                // Manage Categories Button
+                NavigationLink("Manage Categories") {
+                    ExpenseCategoryView()
                         .environmentObject(expenseManager) // Pass ExpenseManager here
                 }
                 .padding()
@@ -110,12 +131,13 @@ struct ContentView: View {
 
     private func addExpense() {
         playSound()
-        if let amount = Double(newExpenseAmount), !selectedUsers.isEmpty {
+        if let amount = Double(newExpenseAmount), !selectedUsers.isEmpty, !selectedCategory.isEmpty {
             withAnimation(.easeInOut(duration: 0.3)) {
-                expenseManager.addExpense(name: newExpenseName, amount: amount, participants: Array(selectedUsers), category: "General")
+                expenseManager.addExpense(name: newExpenseName, amount: amount, participants: Array(selectedUsers), category: selectedCategory) // Use selectedCategory here
                 newExpenseName = ""
                 newExpenseAmount = ""
                 selectedUsers.removeAll()
+                selectedCategory = "" // Reset selected category after adding expense
             }
         }
     }
