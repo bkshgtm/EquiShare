@@ -1,8 +1,21 @@
-//
-//  MultipleSelectionRow.swift
-//  EquiShare
-//
-//  Created by BkshMac on 9/17/24.
-//
+import SwiftUI
 
-import Foundation
+struct MultipleSelectionRow: View {
+    var title: String
+    var isSelected: Bool
+    var action: () -> Void
+
+    var body: some View {
+        HStack {
+            Text(title)
+            Spacer()
+            Image(systemName: isSelected ? "checkmark.circle.fill" : "circle")
+                .foregroundColor(isSelected ? .blue : .gray)
+        }
+        .contentShape(Rectangle())
+        .onTapGesture {
+            action()
+        }
+    }
+}
+
